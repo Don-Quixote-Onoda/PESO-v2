@@ -389,7 +389,7 @@
                     <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
                         <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
                             <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
-                            <h4 class="title"><a href="/emis/public/applicant">Applicants Form</a></h4>
+                            <h4 class="title"><a href="{{route('applicant-form')}}">Applicants Form</a></h4>
                             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                                 aliquip ex ea commodo consequat tarad limino ata</p>
                         </div>

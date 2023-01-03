@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApplicantFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@index');
-Route::get('/emis/public/applicant', 'PagesController@applicant');
+Route::get('/applicant', [ApplicantFormController::class, 'index'])->name('applicant-form');
+
+
 Route::get('/emis/public/employer', 'PagesController@employer');
 Route::get('/dashboard', 'PagesController@dashboard');
 
